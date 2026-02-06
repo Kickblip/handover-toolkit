@@ -1,0 +1,1 @@
+# example keypoint estimation adapater for MediaPipe
