@@ -1,0 +1,88 @@
+{
+  "file": "k4a_0_000696700112.mkv",
+  "generated_at_utc": "2026-02-06T20:12:22.330776+00:00",
+  "configuration": {
+    "color_format": "COLOR_BGRA32",
+    "color_resolution": "RES_1440P",
+    "depth_mode": "NFOV_UNBINNED",
+    "camera_fps": "FPS_30",
+    "color_track_enabled": true,
+    "depth_track_enabled": true,
+    "ir_track_enabled": true,
+    "imu_track_enabled": false,
+    "depth_delay_off_color_usec": 0,
+    "wired_sync_mode": "MASTER",
+    "subordinate_delay_off_master_usec": 0,
+    "start_timestamp_offset_usec": 315622
+  },
+  "tracks": {},
+  "last_timestamp_usec": null,
+  "calibration": {
+    "color": {
+      "image_size": [
+        2560,
+        1440
+      ],
+      "camera_matrix": [
+        [
+          1224.6009521484375,
+          0.0,
+          1276.6055908203125
+        ],
+        [
+          0.0,
+          1224.56005859375,
+          726.2791137695312
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion": [
+        0.29243114590644836,
+        -2.4698989391326904,
+        -2.6462890673428774e-05,
+        -0.0002342371444683522,
+        1.5162937641143799,
+        0.17390505969524384,
+        -2.287773370742798,
+        1.4372243881225586
+      ]
+    },
+    "depth": {
+      "image_size": [
+        640,
+        576
+      ],
+      "camera_matrix": [
+        [
+          504.4752197265625,
+          0.0,
+          321.1546630859375
+        ],
+        [
+          0.0,
+          504.5871887207031,
+          330.0093688964844
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion": [
+        0.3321041762828827,
+        -0.1474974900484085,
+        7.186831498984247e-05,
+        9.488343494012952e-05,
+        -0.008497897535562515,
+        0.6751620173454285,
+        -0.11424204707145691,
+        -0.046168211847543716
+      ]
+    }
+  }
+}
