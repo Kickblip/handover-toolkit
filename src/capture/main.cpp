@@ -210,7 +210,7 @@ int main(int argc, char **argv)
         d.config = K4A_DEVICE_CONFIG_INIT_DISABLE_ALL;
 
         // https://microsoft.github.io/Azure-Kinect-Sensor-SDK/master/group___enumerations_gabd9688eb20d5cb878fd22d36de882ddb.html
-        d.config.color_format = K4A_IMAGE_FORMAT_COLOR_BGRA32;
+        d.config.color_format = K4A_IMAGE_FORMAT_COLOR_MJPG;
 
         // https://microsoft.github.io/Azure-Kinect-Sensor-SDK/master/group___enumerations_gabc7cab5e5396130f97b8ab392443c7b8.html
         d.config.color_resolution = K4A_COLOR_RESOLUTION_1440P;
