@@ -3,3 +3,4 @@ open3d
 pyk4a
 opencv-python
 pillow
+pupil-apriltags
