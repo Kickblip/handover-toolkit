@@ -1,7 +1,7 @@
 
 ## Build commands
 ```
-cmake -S src/capture -B build/capture -DCMAKE_INSTALL_PREFIX=$HOME/.local
+cmake -S tools/capture -B build/capture -DCMAKE_INSTALL_PREFIX=$HOME/.local
 cmake --build build/capture -j
 cmake --install build/capture
 ```

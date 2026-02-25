@@ -10,7 +10,6 @@ target_link_libraries(htkrecorder PRIVATE k4a::k4a)
 find_library(K4ARECORD_LIB NAMES k4arecord REQUIRED)
 target_link_libraries(htkrecorder PRIVATE ${K4ARECORD_LIB})
 
-# Setup install
 include(GNUInstallDirs)
 
 install(TARGETS htkrecorder RUNTIME DESTINATION bin)

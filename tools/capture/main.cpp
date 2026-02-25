@@ -216,12 +216,12 @@ int main(int argc, char **argv)
         d.config.color_resolution = K4A_COLOR_RESOLUTION_1440P;
 
         // https://microsoft.github.io/Azure-Kinect-Sensor-SDK/master/group___enumerations_ga3507ee60c1ffe1909096e2080dd2a05d.html
-        d.config.depth_mode = K4A_DEPTH_MODE_NFOV_UNBINNED;
+        d.config.depth_mode = K4A_DEPTH_MODE_OFF;
 
         // 5, 15, or 30
         d.config.camera_fps = K4A_FRAMES_PER_SECOND_30;
 
-        d.config.synchronized_images_only = true;
+        d.config.synchronized_images_only = false;
 
         if (d.index == master_index)
         {
