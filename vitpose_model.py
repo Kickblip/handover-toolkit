@@ -16,6 +16,11 @@ VIT_DIR = os.path.join(ROOT_DIR, "third-party/ViTPose")
 
 class ViTPoseModel(object):
     MODEL_DICT = {
+        'ViTPose-S': {
+            'config': f'{VIT_DIR}/configs/wholebody/2d_kpt_sview_rgb_img/topdown_heatmap/coco-wholebody/ViTPose_small_wholebody_256x192.py',
+            'model': f'{ROOT_DIR}/_DATA/vitpose_ckpts/vitpose_small_wholebody/wholebody.pth',
+        },
+
         'ViTPose+-G (multi-task train, COCO)': {
             'config': f'{VIT_DIR}/configs/wholebody/2d_kpt_sview_rgb_img/topdown_heatmap/coco-wholebody/ViTPose_huge_wholebody_256x192.py',
             'model': f'{ROOT_DIR}/_DATA/vitpose_ckpts/vitpose+_huge/wholebody.pth',
@@ -24,6 +29,7 @@ class ViTPoseModel(object):
 
     def __init__(self, device: str | torch.device):
         self.device = torch.device(device)
+        # self.model_name = "ViTPose-S"
         self.model_name = 'ViTPose+-G (multi-task train, COCO)'
         self.model = self._load_model(self.model_name)
 
