@@ -129,8 +129,8 @@ int main(int argc, char **argv)
 
     // additional color control defaults
     int32_t whitebalance = 4500;
-    int32_t brightness   = 255;
-    int32_t contrast     = 10;
+    int32_t brightness   = 190;
+    int32_t contrast     = 7;
     int32_t saturation   = 32;
     int32_t sharpness    = 2;
 

@@ -47,8 +47,7 @@ def main() -> None:
     if not mkv_path.exists():
         die(f"Input MKV not found: {mkv_path}")
 
-    # default output directory: ./frames
-    out_dir = Path("frames").resolve()
+    out_dir = Path(mkv_path.stem).resolve()
     ensure_dir(out_dir)
 
     pb = PyK4APlayback(str(mkv_path))

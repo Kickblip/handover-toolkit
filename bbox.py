@@ -150,7 +150,7 @@ def main():
 
             # bbox saved as [x1,y1,x2,y2]
             np.save(
-                os.path.join(args.out_dir, f"{stem}_hand_{i:03d}_bbox.npy"),
+                os.path.join(args.out_dir, f"{stem}_hand_{i:03d}_p{r['person_id']}_r{r['is_right']}.npy"),
                 np.array([x1, y1, x2, y2], dtype=np.float32),
             )
 
